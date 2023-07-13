@@ -189,6 +189,7 @@ h6 {
 @media (max-width: 768px) {
   .navbar-container{
     opacity: 0;
+    display: none;
   }
   
 }
@@ -295,6 +296,20 @@ h6 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 425px){
+  #hero h1{
+    text-align: center;
+  }
+  #hero p {
+    text-align: center;
+  }
+
+  #hero img{
+    width: 100px;
+    height: 50px;
   }
 }
 
@@ -806,7 +821,11 @@ section {
   align-items: center;
 }
 
-@media (max-width:424px){
+@media (max-width:576px){
+
+  #associations{
+    height: 100vh;
+  }
   .associations-container{
     flex-direction: column;
     align-items: center;
