@@ -183,6 +183,7 @@
         itemSelector: ".portfolio-item",
       });
 
+      portfolioIsotope.arrange({ filter: ".filter-photo" });
       let portfolioFilters = select("#portfolio-flters li", true);
 
       on(
