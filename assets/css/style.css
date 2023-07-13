@@ -1,14 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -74,67 +63,6 @@ h6 {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  transition: all ease-in-out 0.5s;
-  z-index: 9997;
-  transition: all 0.5s;
-  padding: 0 15px;
-  background: #040b14;
-  overflow-y: auto;
-}
-
-#header .profile img {
-  margin: 15px auto;
-  display: block;
-  width: 120px;
-  border: 8px solid #2c2f3f;
-}
-
-#header .profile h1 {
-  font-size: 24px;
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  -moz-text-align-last: center;
-  text-align-last: center;
-  font-family: "Poppins", sans-serif;
-}
-
-#header .profile h1 a,
-#header .profile h1 a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-#header .profile .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #212431;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#header .profile .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
-  text-decoration: none;
-}
-
 /* #main {
   margin-left: 300px;
 } */
@@ -160,6 +88,10 @@ h6 {
     padding-right: 12px;
   }
 }
+
+/* Section 1*/
+
+/* section 1 End */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -306,16 +238,16 @@ h6 {
   background-size: cover;
 }
 
-/* #hero:before {
+#hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-} */
+}
 
 #hero .hero-container {
   position: relative;
@@ -326,17 +258,16 @@ h6 {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-weight: 600;
-  line-height: 80px;
-  letter-spacing: 15px;
+  font-weight: 700;
+  line-height: 56px;
   color: #fff;
 }
 
 #hero p {
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-size: 26px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
@@ -363,6 +294,98 @@ h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+}
+
+/*New*/
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--flex-alignment);
+  letter-spacing: 0;
+  padding: 0;
+}
+
+.icons li {
+  position: relative;
+  z-index: 1;
+  list-style-type: none;
+}
+
+.icons li a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.icons li a svg {
+  display: block;
+  position: relative;
+}
+
+.icons li a + svg {
+  display: block;
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.icons li a .label {
+  display: none;
+}
+
+#icons01 {
+  font-size: 1.5em;
+  gap: 1rem;
+}
+
+#icons01:not(:first-child) {
+  margin-top: 1.75rem !important;
+}
+
+#icons01:not(:last-child) {
+  margin-bottom: 1.75rem !important;
+}
+
+#icons01 li a {
+  border-radius: 100%;
+  height: 2em;
+  width: 2em;
+  transition: transform 0.5s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+}
+
+#icons01 li a svg {
+  height: 60%;
+  width: 60%;
+  transition: fill 0.5s ease;
+}
+
+#icons01 a {
+  background-color: #81EBB2;
+}
+
+#icons01 a svg {
+  fill: rgba(0,0,0,0.651);
+}
+
+#icons01 a:hover {
+  background-color: #C2FFD7 !important;
+}
+
+#icons01 li a + svg {
+  transition: transform 0.5s ease, fill 0.5s ease, stroke 0.5s ease;
+}
+
+#icons01 li a:hover {
+  transform: translateY(-4.25%);
+}
+
+#icons01 li a:hover + svg {
+  transform: translateY(-4.25%);
 }
 
 /*--------------------------------------------------------------
@@ -438,94 +461,6 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px;
-}
-
-.facts .count-box {
-  padding: 30px;
-  width: 100%;
-}
-
-.facts .count-box i {
-  display: block;
-  font-size: 44px;
-  color: #149ddd;
-  float: left;
-  line-height: 0;
-}
-
-.facts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  color: #050d18;
-  margin-left: 60px;
-}
-
-.facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #122f57;
-}
-
-.facts .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #122f57;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.facts .count-box a:hover {
-  color: #1f5297;
-}
-
-/*--------------------------------------------------------------
-# Akills
---------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
 }
 
 /*--------------------------------------------------------------
@@ -834,7 +769,7 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: white ;
 }
 
 .testimonials .testimonial-item h4 {
@@ -866,7 +801,7 @@ section {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: #fff;
+  background: #1a90c7;
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
@@ -911,9 +846,9 @@ section {
 
 .contact .info {
   padding: 30px;
-  background: #fff;
   width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact .info i {
@@ -928,6 +863,7 @@ section {
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+  flex-direction: column;
 }
 
 .contact .info h4 {
@@ -1084,6 +1020,48 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*--------------------------------------------------------------
+# Associations
+--------------------------------------------------------------*/
+
+#associations {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Collaborations/Collaborations\ BG\ .jpeg");
+  background-size: cover;
+  background-color: rgba(0,0,0,1);
+}
+
+.associations-container{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width:424px){
+  .associations-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .associations-container img {
+    height: 125px;
+    width: 125px;
+  }
+}
+
+.footer{
+  width: 100%;
+  height: 50px;
+  background: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*--------------------------------------------------------------
