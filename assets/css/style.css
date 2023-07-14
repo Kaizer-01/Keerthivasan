@@ -810,10 +810,10 @@ section {
 
 .contact{
   width: 100%;
-  height: 45vh;
+  height: 50vh;
   background: url('/assets/img/Footer/footer.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 
