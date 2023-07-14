@@ -814,7 +814,6 @@ section {
   background: url('/assets/img/Footer/footer.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .footer{
@@ -827,8 +826,6 @@ section {
   align-items: center;
   padding-left: 25px;
   padding-right: 25px;
-  position: absolute;
-  bottom: 0px;
 }
 
 /*--------------------------------------------------------------
